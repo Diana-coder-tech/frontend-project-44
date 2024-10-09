@@ -1,15 +1,21 @@
 {
   "name": "@hexlet/code",
-"type": "module",
+  "type": "module",
   "version": "1.0.0",
   "description": "\"first project\"",
-  "main": "index.js",
+  "main": "src/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Diana Zh.",
   "license": "ISC",
-"bin": {
-  "brain-games": "bin/brain-games.js"
-}
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8"
+  }
 }
