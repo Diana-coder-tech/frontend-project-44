@@ -1,34 +1,34 @@
-import globals from 'globals';
+import globals from "globals";
 import js from "@eslint/js";
-import importPlugin from 'eslint-plugin-import';
+import importPlugin from "eslint-plugin-import";
 
 export default [
   js.configs.recommended,
-   {
-      languageOptions: {
-        globals: {
-          ...globals.node,
-          ...globals.jest,
-        },
-        parserOptions: {
-          // Eslint doesn't supply ecmaVersion in `parser.js` `context.parserOptions`
-          // This is required to avoid ecmaVersion < 2015 error or 'import' / 'export' error
-          ecmaVersion: 'latest',
-          sourceType: 'module',
-        },
+  {
+    languageOptions: {
+      globals: {
+        ...globals.node,
+        ...globals.jest,
       },
-      plugins: { import: importPlugin },
-      rules: {
-        ...importPlugin.configs.recommended.rules,
+      parserOptions: {
+        // Eslint doesn't supply ecmaVersion in `parser.js` `context.parserOptions`
+        // This is required to avoid ecmaVersion < 2015 error or 'import' / 'export' error
+        ecmaVersion: "latest",
+        sourceType: "module",
       },
     },
-    
-{
-  rules: {
-    'semi': ['error', 'always'],
-    'no-console': 'off',
-    'no-unused-vars': 'error',
-    'import/extensions': 'off',
+    plugins: { import: importPlugin },
+    rules: {
+      ...importPlugin.configs.recommended.rules,
+    },
   },
-},
+
+  {
+    rules: {
+      semi: ["error", "always"],
+      "no-console": "off",
+      "no-unused-vars": "error",
+      "import/extensions": "off",
+    },
+  },
 ];
