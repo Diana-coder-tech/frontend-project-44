@@ -7,7 +7,10 @@
 Игра: "Проверка на чётность": 
 https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
 
-Игра: "Калькулятор"
+Игра: "Калькулятор":
+https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
+
+Игра "НОД":
 https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
 
 Игра "НОД":
