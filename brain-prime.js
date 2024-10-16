@@ -1,4 +1,5 @@
-{"version": 2, "width": 110, "height": 30, "timestamp": 1729069711, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+{"version": 2, "width": 110, "height": 30, "timestamp": 1729069711, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"},
+"events": [
 [0.034498, "o", "\u001b[?2004h\u001b]0;diana_zh@DESKTOP-SDQ4U1P: ~/frontend-project-44\u0007\u001b[01;32mdiana_zh@DESKTOP-SDQ4U1P\u001b[00m:\u001b[01;34m~/frontend-project-44\u001b[00m$ "]
 [2.713424, "o", "r"]
 [3.669168, "o", "\b\u001b[K"]
@@ -90,3 +91,5 @@
 [53.73738, "o", "i"]
 [53.98635, "o", "t"]
 [54.386063, "o", "\r\n\u001b[?2004l\rexit\r\n"]
+]
+}
