@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import getRandomNumber from '../utils';
+import getRandomNumber from '../utils.js';
 
 // Функция для генерации случайного оператора
 const getRandomOperator = () => {

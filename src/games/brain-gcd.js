@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import getRandomNumber from '../utils';
+import getRandomNumber from '../utils.js';
 
 // Функция для вычисления НОД (алгоритм Евклида)
 const gcd = (a, b) => {
