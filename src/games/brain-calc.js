@@ -1,24 +1,21 @@
-import runGame from "../index.js";
-
-// Функция для генерации случайного числа
-const getRandomNumber = (min = 1, max = 100) =>
-  Math.floor(Math.random() * (max - min + 1)) + min;
+import runGame from '../index.js';
+import getRandomNumber from '../utils';
 
 // Функция для генерации случайного оператора
 const getRandomOperator = () => {
-  const operators = ["+", "-", "*"];
-  const randomIndex = Math.floor(Math.random() * operators.length);
+  const operators = ['+', '-', '*'];
+  const randomIndex = getRandomNumber(0, operators.length - 1);
   return operators[randomIndex];
 };
 
 // Функция для расчета результата выражения
 const calculate = (num1, num2, operator) => {
   switch (operator) {
-    case "+":
+    case '+':
       return num1 + num2;
-    case "-":
+    case '-':
       return num1 - num2;
-    case "*":
+    case '*':
       return num1 * num2;
     default:
       throw new Error(`Unknown operator: ${operator}`);
@@ -38,7 +35,7 @@ const generateRound = () => {
 };
 
 // Описание игры для вывода в приветствии
-const description = "What is the result of the expression?";
+const description = 'What is the result of the expression?';
 
 // Запуск игры
 export default () => runGame(description, generateRound);

@@ -1,7 +1,5 @@
-import runGame from "../index.js";
-
-// Функция для генерации случайного числа
-const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
+import runGame from '../index.js';
+import getRandomNumber from '../utils';
 
 // Функция для вычисления НОД (алгоритм Евклида)
 const gcd = (a, b) => {
@@ -21,7 +19,7 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 // Описание игры для вывода в приветствии
-const description = "Find the greatest common divisor of given numbers.";
+const description = 'Find the greatest common divisor of given numbers.';
 
 // Запуск игры
 export default () => runGame(description, generateRound);

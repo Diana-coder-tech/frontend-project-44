@@ -1,6 +1,5 @@
-import runGame from "../index.js";
-
-const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
+import runGame from '../index.js';
+import getRandomNumber from '../utils';
 
 // Функция для проверки, является ли число простым
 const isPrime = (num) => {
@@ -21,7 +20,7 @@ const description =
 
 const generateRound = () => {
   const question = getRandomNumber();
-  const correctAnswer = isPrime(question) ? "yes" : "no";
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [question, correctAnswer.toLowerCase()];
 };

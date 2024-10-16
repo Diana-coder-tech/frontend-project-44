@@ -1,9 +1,9 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 
 // Функция для запуска любой игры
 const runGame = (gameDescription, generateRound, roundsCount = 3) => {
-  console.log("Welcome to the Brain Games!");
-  const userName = readlineSync.question("May I have your name? ");
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(gameDescription);
 
@@ -15,7 +15,7 @@ const runGame = (gameDescription, generateRound, roundsCount = 3) => {
     console.log(`Question: ${question}`);
 
     // Получаем ответ пользователя
-    const userAnswer = readlineSync.question("Your answer: ");
+    const userAnswer = readlineSync.question('Your answer: ');
 
     // Проверяем правильность ответа
     if (userAnswer !== correctAnswer) {
@@ -26,7 +26,7 @@ const runGame = (gameDescription, generateRound, roundsCount = 3) => {
       return;
     }
 
-    console.log("Correct!");
+    console.log('Correct!');
   }
 
   // Если пользователь правильно ответил на все вопросы
