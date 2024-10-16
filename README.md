@@ -18,3 +18,6 @@ https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
 
 Игра "Арифметическая прогрессия":
 https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
+
+Игра "Простое ли число?":
+https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
