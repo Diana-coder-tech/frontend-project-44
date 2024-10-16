@@ -14,7 +14,7 @@ const generateProgression = (start, step, length) => {
 
     // Генерация случайного старта, шага и длины прогрессии
     const start = Math.floor(Math.random() * 10) + 1; // Старт прогрессии от 1 до 10
-  const step = Math.floor(Math.random() * 3) + 1; // Шаг прогрессии от 1 до 5
+  const step = Math.floor(Math.random() * 3) + 1; // Шаг прогрессии от 1 до 3
   const length = Math.floor(Math.random() * 6) + 5; // Длина прогрессии от 5 до 10
 
   const hiddenIndex = Math.floor(Math.random() * length); 
@@ -22,7 +22,7 @@ const generateProgression = (start, step, length) => {
   const correctAnswer = question[hiddenIndex].toString();
   question[hiddenIndex] = '..'; // Заменяем элемент прогрессии на '..'
 
-  return [question, correctAnswer];
+  return [question.join(' '), correctAnswer];
 };
 
   // Описание игры для вывода в приветствии
