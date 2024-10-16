@@ -4,6 +4,8 @@
 
 Семантическое версионирование https://semver.org/lang/ru/
 
+Проект с реализацией 5-ти игр. Ниже названия игр и видео, как они работают.
+
 Игра: "Проверка на чётность":
 https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
 
@@ -18,3 +20,13 @@ https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
 
 Игра "Простое ли число?":
 https://asciinema.org/connect/4c581e1e-a5f6-4b3e-b98a-897a3160d3a3
+
+Работа на node v22.9.0, npm 10.9.0
+
+Инструкция по установке и запуску игр:
+npm install --dry-run
+brain-even // "Проверка на чётность"
+brain-calc // "Калькулятор"
+brain-gcd // "НОД"
+brain-progression // "Арифметическая прогрессия"
+brain-prime // "Простое ли число?"

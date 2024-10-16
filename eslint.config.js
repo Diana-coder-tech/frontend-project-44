@@ -23,18 +23,22 @@ export default [
     },
   },
   {
-    ignores: ['brain-gcd', 'brain-prime', 'brain-prime.js', 'brain-progression', 'demo.cast']
-},
+    ignores: [
+      'brain-gcd',
+      'brain-prime',
+      'brain-prime.js',
+      'brain-progression',
+      'demo.cast',
+    ],
+  },
 
-    {  
+  {
     rules: {
-      
       semi: ['error', 'always'],
       'no-console': 'off',
       'no-unused-vars': 'error',
       'import/extensions': 'off',
-     'quotes': ['error', 'single']
-  
+      quotes: ['error', 'single'],
     },
   },
 ];
