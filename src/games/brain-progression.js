@@ -4,7 +4,7 @@ import getRandomNumber from '../utils.js';
 // Функция для генерации арифметической прогрессии
 const generateProgression = (start, step, length) => {
   const progression = [];
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step);
   }
   return progression;
@@ -16,15 +16,12 @@ const generateRound = () => {
   const minStart = 1;
   const maxStart = 10;
   const start = getRandomNumber(minStart, maxStart);
-
   const minStep = 1;
   const maxStep = 3;
   const step = getRandomNumber(minStep, maxStep);
- 
   const minLength = 5;
   const maxLength = 10;
   const length = getRandomNumber(minLength, maxLength);
-  
   const hiddenIndex = getRandomNumber(0, length - 1);
   const question = generateProgression(start, step, length);
   const correctAnswer = question[hiddenIndex];
