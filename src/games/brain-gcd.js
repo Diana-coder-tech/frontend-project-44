@@ -2,11 +2,11 @@ import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
 // Функция для вычисления НОД (алгоритм Евклида)
-const gcd = (number1, number2) => {
-  while (number2 !== 0) {
-    [number1, number2] = [number2, number1 % number2];
+const gcd = (firstNumber, secondNumber) => {
+  while (secondNumber !== 0) {
+    [firstNumber, secondNumber] = [secondNumber, firstNumber % secondNumber];
   }
-  return number1;
+  return firstNumber;
 };
 
 // Функция для генерации раунда игры (вопрос и правильный ответ)
