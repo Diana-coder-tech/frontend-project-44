@@ -39,7 +39,13 @@ export default [
       'no-unused-vars': 'error',
       'import/extensions': 'off',
       quotes: ['error', 'single'],
-      'no-param-reassign': 'off',
+      'no-param-reassign': [
+      'off',
+      {
+        'props': true, // Чтобы правило применялось к свойствам объектов
+        'ignorePropertyModificationsFor': ['firstNumber', 'secondNumber'], // Игнорировать изменение параметра с именем 'firstNumber'
+      }
+    ],      
     },
   },
 ];
