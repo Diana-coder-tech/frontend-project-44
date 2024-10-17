@@ -13,24 +13,24 @@ const generateProgression = (start, step, length) => {
 // Генерация прогрессии (вопроса)
 const generateRound = () => {
   // Генерация случайного старта, шага и длины прогрессии
-  const start = () => {
-    return getRandomNumber(1, 10);
-  };
+  const minStart = 1;
+  const maxStart = 10;
+  const start = getRandomNumber(minStart, maxStart);
 
-  const step = () => {
-    return getRandomNumber(1, 3);
-  };
-
-  const length = () => {
-    return getRandomNumber(5, 10);
-  };
-
-  const hiddenIndex = Math.floor(Math.random() * length());
-  const question = generateProgression(start(), step(), length());
-  const correctAnswer = question[hiddenIndex].toString();
+  const minStep = 1;
+  const maxStep = 3;
+  const step = getRandomNumber(minStep, maxStep);
+ 
+  const minLength = 5;
+  const maxLength = 10;
+  const length = getRandomNumber(minLength, maxLength);
+  
+  const hiddenIndex = getRandomNumber(0, length - 1);
+  const question = generateProgression(start, step, length);
+  const correctAnswer = question[hiddenIndex];
   question[hiddenIndex] = '..'; // Заменяем элемент прогрессии на '..'
 
-  return [question.join(' '), correctAnswer];
+  return [question.join(' '), correctAnswer.toString()];
 };
 
 // Описание игры для вывода в приветствии
