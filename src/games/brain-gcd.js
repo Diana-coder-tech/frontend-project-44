@@ -3,10 +3,14 @@ import getRandomNumber from '../utils.js';
 
 // Функция для вычисления НОД (алгоритм Евклида)
 const gcd = (firstNumber, secondNumber) => {
-  while (secondNumber !== 0) {
-    [firstNumber, secondNumber] = [secondNumber, firstNumber % secondNumber];
+  let a = firstNumber;
+  let b = secondNumber;
+
+  while (b !== 0) {
+    [a, b] = [b, a % b];
   }
-  return firstNumber;
+
+  return a;
 };
 
 // Функция для генерации раунда игры (вопрос и правильный ответ)
