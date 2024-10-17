@@ -1,5 +1,5 @@
-import runGame from '../index.js';
-import getRandomNumber from '../utils.js';
+import runGame from "../index.js";
+import getRandomNumber from "../utils.js";
 
 // Функция для генерации арифметической прогрессии
 const generateProgression = (start, step, length) => {
@@ -25,13 +25,13 @@ const generateRound = () => {
   const hiddenIndex = getRandomNumber(0, length - 1);
   const question = generateProgression(start, step, length);
   const correctAnswer = question[hiddenIndex];
-  question[hiddenIndex] = '..'; // Заменяем элемент прогрессии на '..'
+  question[hiddenIndex] = ".."; // Заменяем элемент прогрессии на '..'
 
-  return [question.join(' '), correctAnswer.toString()];
+  return [question.join(" "), correctAnswer.toString()];
 };
 
 // Описание игры для вывода в приветствии
-const description = 'What number is missing in the progression?';
+const description = "What number is missing in the progression?";
 
 // Запуск игры
 export default () => runGame(description, generateRound);

@@ -1,9 +1,9 @@
-import runGame from '../index.js';
-import getRandomNumber from '../utils.js';
+import runGame from "../index.js";
+import getRandomNumber from "../utils.js";
 
 // Функция для генерации случайного оператора
 const getRandomOperator = () => {
-  const operators = ['+', '-', '*'];
+  const operators = ["+", "-", "*"];
   const randomIndex = getRandomNumber(0, operators.length - 1);
   return operators[randomIndex];
 };
@@ -11,11 +11,11 @@ const getRandomOperator = () => {
 // Функция для расчета результата выражения
 const calculate = (num1, num2, operator) => {
   switch (operator) {
-    case '+':
+    case "+":
       return num1 + num2;
-    case '-':
+    case "-":
       return num1 - num2;
-    case '*':
+    case "*":
       return num1 * num2;
     default:
       throw new Error(`Unknown operator: ${operator}`);
@@ -35,7 +35,7 @@ const generateRound = () => {
 };
 
 // Описание игры для вывода в приветствии
-const description = 'What is the result of the expression?';
+const description = "What is the result of the expression?";
 
 // Запуск игры
 export default () => runGame(description, generateRound);
