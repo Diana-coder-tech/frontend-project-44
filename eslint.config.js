@@ -39,6 +39,7 @@ export default [
       'no-unused-vars': 'error',
       'import/extensions': 'off',
       quotes: ['error', 'single'],
+      'no-param-reassign': 'off',
     },
   },
 ];
